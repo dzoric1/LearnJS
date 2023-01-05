@@ -22,8 +22,8 @@ let personalMovieDB = {
 };
 
 for (let i = 0; i < 2; i++) {
-  const answer1 = prompt('Один из последних просмотренных фильмов?');
-  const answer2 = prompt('На сколько оцените его?');
+  const answer1 = prompt('Один из последних просмотренных фильмов?', '');
+  const answer2 = prompt('На сколько оцените его?', '');
 
   if (answer1 != null && answer2 != null && answer1 != '' && answer2 != '' && answer1.length < 50 && answer2.length < 50) {
     console.log('done');
@@ -45,6 +45,4 @@ if (personalMovieDB.count < 10) {
 } else {
   alert('Произошла ошибка');
 }
-
-
 
